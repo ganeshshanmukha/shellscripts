@@ -1,0 +1,64 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program : 1
+
+#
+#	First, all possible users.  These are found in the file "/etc/passwd"
+#
+echo "Number of possible users on the system: \c"
+cat /etc/passwd | wc -l
+
+#
+#	Next, all users currently logged in (using "who")
+#
+echo "Number of users logged onto the system: \c"
+who | wc -l
+
+#
+#	Finally, the number of running processes (using "ps -e")
+#
+echo "Total number of processes running:      \c"
+ps -e | wc -l
+
+
+program : 2
+
+#
+#	First, the user's name
+#
+echo "Please enter your name: \c"
+read name
+echo Name: $name > details.out
+
+#
+#	Next, the user's address
+#
+echo "Please enter your address: \c"
+read address
+echo Address: $address >> details.out		# note: APPENDING!
+
+#
+#	Next, the user's phone number
+#
+echo "Please enter your phone number: \c"
+read phone
+echo Phone: $phone >> details.out
+
+#
+#	Finally, display the message about the filename
+#
+echo Thank you.  The details have been stored in the file \"details.out\"
+
+
+
