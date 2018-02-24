@@ -5,6 +5,7 @@ mv program.log.5 program.log.6
 mv program.log.4 program.log.5
 mv program.log.3 program.log.4
 mv program.log.2 program.log.3
+mv program.log.1 program.log.2
 mv program.log   program.log.1
 
 
