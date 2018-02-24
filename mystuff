@@ -1,3 +1,30 @@
+Shell : 
+
+The shell provides you with an interface to the UNIX system.
+
+It gathers input from you and executes programs based on that input. 
+
+When a program finishes executing, it displays that program's output.
+
+A shell is an environment in which we can run our commands, programs, and shell scripts. 
+
+There are different flavors of shells, just as there are different flavors of operating systems. 
+
+Each flavor of shell has its own set of recognized commands and functions
+
+DOS = Command.com
+Windows3.1/windows NT 3.x = program manager
+Windows 95/98/ME/NT4/2000/XP = Windows Explorer
+
+Types of Shell : 
+
+K-Shell David Korn (not free)
+
+C-Shell (Based on C-programming Language)
+
+Bash = Bourne Again Shell.
+
+
 #!/bin/sh
 cd /home/ganesh/logfiles
 rm program.log.6
@@ -29,9 +56,19 @@ ls userlist.txt xyz  > file 2>errors
 
 ls userlist.txt xyz  > file 2>&1
 
+============================================
+
 sleep 1000
 
 sleep 1000&
+
+=============================================
+
+Special Characters :
+
+&   *   ?  []  < > |  ( )  #  $  ^ =  '  " { } ; \
+
+===============================================
 
 Program : 1
 
