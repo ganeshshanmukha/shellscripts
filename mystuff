@@ -123,4 +123,17 @@ Special Characters :
 
 ===============================================
 
+echo the fee is $10
+
+echo the fee is \$10
+
+echo comments begin with a # character
+
+echo "comments begin with a #character"
+
+echo "the fee is \$10"
+
+echo the fee is '$'10
+
+
 
