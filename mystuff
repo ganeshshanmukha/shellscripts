@@ -8,6 +8,11 @@ mv program.log.2 program.log.3
 mv program.log.1 program.log.2
 mv program.log   program.log.1
 
+#!/bin/bash
+pwd
+ls -c
+date
+
 
 Program : 1
 
