@@ -18,6 +18,17 @@ echo -n please enter your name:
 read name
 echo Hello $name How are you ?
 
+#!/bin/bash
+echo -n "please enter your name: "
+read name
+echo Hello $name.
+
+touch askname ; echo ganesh > askname
+
+ls userlist.txt xyz  > file 2>errors
+
+ls userlist.txt xyz  > file 2>&1
+
 
 
 Program : 1
