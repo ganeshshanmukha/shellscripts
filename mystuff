@@ -14,9 +14,10 @@ ls -c
 date
 
 #!/bin/bash
-echo please enter your name:
+echo -n please enter your name:
 read name
 echo Hello $name How are you ?
+
 
 
 Program : 1
