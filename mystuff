@@ -62,13 +62,7 @@ sleep 1000
 
 sleep 1000&
 
-=============================================
 
-Special Characters :
-
-&   *   ?  []  < > |  ( )  #  $  ^ =  '  " { } ; \
-
-===============================================
 
 Program : 1
 
@@ -119,5 +113,14 @@ echo Phone: $phone >> details.out
 #
 echo Thank you.  The details have been stored in the file \"details.out\"
 
+
+
+=============================================
+
+Special Characters :
+
+&   *   ?  []  < > |  ( )  #  $  ^ =  '  " { } ; \
+
+===============================================
 
 
