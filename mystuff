@@ -137,3 +137,17 @@ echo the fee is '$'10
 
 
 
+
+
+Variables
+The .profile or .bash_profile files in your home directory. These files are used to set environmental items for a users shell.
+/etc/profile file is not very different however it is used to set system wide environmental variables on users shells.
+/etc/profile.d
+In addition to the setting environmental items the /etc/profile will execute the scripts within /etc/profile.d/*.sh. If you plan on setting your own system wide environmental variables it is recommended to place your configuration in a shell script within /etc/profile.d.
+
+.bashrc file in your home directory. This file is meant for setting command aliases and functions used by bash shell users.
+ The /etc/bashrc is setting command aliases  in system wide 
+
+
+
+
