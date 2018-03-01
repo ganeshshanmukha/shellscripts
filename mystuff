@@ -227,7 +227,15 @@ echo the files are different!
 echo please review the differences:
 diff file1 file2
 fi
+else clause example 2 :
 
-
+#!/bin/bash
+if ls nofile > /dev/null
+then
+: # ":" is the "do nothing" command
+else
+echo the file does not exist --exiting...
+exit
+fi
 
 
