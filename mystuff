@@ -149,5 +149,85 @@ In addition to the setting environmental items the /etc/profile will execute the
  The /etc/bashrc is setting command aliases  in system wide 
 
 
+conditional code
+
+True/false
+
+ls
+echo $? 
+0
+ls dd
+echo $?
+2
+true
+echo $?
+0
+false
+echo $?
+1
+
+
+Conditional command execution
+
+command1 && command2
+
+command3 || command4
+
+cp abc xyz && echo the file was copied okay (if the abc and xyz exists and then excute echo )
+
+ls file2 || ls 
+
+if the command exists error and then run the second command
+
+IF STATEMENT
+
+Syntax
+
+if command1
+ then
+    command2
+    command3
+....
+fi
+
+example :
+
+
+if diff file1 file2 > /dev/null
+ then
+    echo The files are the same
+    rm file2
+fi
+
+
+Else clause:
+
+if command1
+then
+one set of commands
+else
+another set of commands
+fi
+
+
+if the first set of commands exits non-zero then excute second set of commands
+
+if the second set condition is met then close the loop
+
+
+
+example:
+
+if diff file1 file2 > /dev/null
+ then
+echo the files are the same
+rm file2
+else
+echo the files are different!
+echo please review the differences:
+diff file1 file2
+fi
+
+
 
 
