@@ -238,4 +238,30 @@ echo the file does not exist --exiting...
 exit
 fi
 
+elif syntax : 
+
+if command1
+then
+command set 1
+elif command2
+then
+command set 2
+else
+command set 3
+fi
+
+#!/bin/bash
+
+read -p "Enter value of i :" i
+
+if [ $i -eq 5 ]
+then
+    echo "Value of i is 5"
+elif [ $i -eq 10 ]
+then
+    echo "Value of i is 10"
+else
+    echo "Value of i is not equal to 5 or 10"
+fi
+~
 
