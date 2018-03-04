@@ -265,3 +265,104 @@ else
 fi
 ~
 
+Comparisons statement
+
+Test
+
+var1=10
+test $var1 = 20
+echo $?
+
+if test $var1 -gt $max
+then
+echo That value is too large 
+fi
+
+Test$var1 = 20
+
+Spaces are must and should
+
+Example
+
+x=
+test $x = 20
+-bash: test: =: unary operator expected
+test "$x" = 20
+
+test -f /etc/passwd
+
+echo $?
+
+test -d .
+echo $?
+
+dir=/etc/garbage
+test -d $dir
+echo $?
+
+test ! 
+
+! = not
+
+example
+
+test ! -w /etc/passwd
+
+echo $?
+
+example of test :
+
+#!/bin/bash
+echo -n "please enter a filename: "
+read fname
+if test -z "$fname"
+then
+echo "you did not enter a filename"
+elif test -f "$fname" -a -w "$fname"
+then
+echo "Every thing is fine"
+else
+echo "The file is not a writable file"
+fi
+
+here -a = and 
+
+here -z = to check the file is exists or not 
+
+test also have feature ( -o = or ) either of the condition 
+
+
+test also can achive 
+
+#!/bin/bash
+echo -n "please enter a filename: "
+read fname
+if [ -z "$fname" ]
+then
+echo "you did not enter a filename"
+elif [ -f "$fname" -a -w "$fname" ]
+then
+echo "Every thing is fine"
+else
+echo "The file is not a writable file"
+fi
+
+
+Case Statement
+
+Syntax
+
+if [ $var1 = val1 ]
+then
+code for case1
+elif [ $var1 = val2 ]
+then
+code for case2
+elif [ $var1 = val3 ]
+then
+code for case 3
+elif [ $var1 = val4 ]
+then
+
+etc
+
