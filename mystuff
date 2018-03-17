@@ -719,3 +719,20 @@ sort -M months.txt
 
 https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
 
+
+sed 
+
+stearm editor
+
+:s/bash/bourne again shell/ 
+
+:s/bash/bourne again shell/g
+
+1,10s/bash/bourne/ or 40,$s/foo/bar
+
+11,20d -delete
+
+3,$!d
+/ducks/!d
+
+
