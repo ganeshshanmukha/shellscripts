@@ -559,5 +559,64 @@ do
 done
 
 
+Text Processing
+
+wc -l : Prints the number of lines in a file.
+wc -w : prints the number of words in a file.
+wc -c : Displays the count of bytes in a file.
+wc -m : prints the count of characters from a file.
+wc -L : prints only the length of the longest line in a file.
+ls -l | wc 
+
+lines words characters
+
+grep = Global regular Expression Parser
+
+cat file.txt
+ostechnix
+Ostechnix
+o$technix
+linux
+linus
+unix
+technology
+hello world
+HELLO world
+
+grep nix file.txt
+
+grep 'hello world' file.txt
+
+grep -n nix file.txt
+
+grep os file.txt 
+
+grep -i os file.txt 
+
+grep -i 'hello world' file.txt
+
+cat file.txt | grep os
+
+grep tech file.txt
+
+grep ^tech file.txt = word start with tech
+
+grep .n file.txt = word contains "n"
+
+extended grep or grep -E
+
+egrep '^(l|o)' file.txt
+
+egrep '^[l-u]' file.txt range 
+
+egrep '^[l-u]|[L-U]' file.txt
+
+
+ fast grep / grep -F
+
+grep x$ file.txt
+
+fgrep o$ file.txt 
+
 
 
