@@ -331,6 +331,21 @@ here -z = to check the file is exists or not
 
 test also have feature ( -o = or ) either of the condition 
 
+Comparisons:
+-eq	equal to
+-ne	not equal to
+-lt	less than
+-le	less than or equal to
+-gt	greater than
+-ge	greater than or equal to
+
+File Operations:
+-s	file exists and is not empty
+-f	file exists and is not a directory
+-d	directory exists
+-x	file is executable
+-w	file is writable
+-r	file is readable
 
 test also can achive 
 
