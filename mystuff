@@ -440,6 +440,8 @@ echo "That answer is incorrect please enter again"
 echo -n "Please enter your country name : "
 read country
 done
+echo " My country is $country ,I'm an indian "
+
 
 example :2
 #!/bin/bash
