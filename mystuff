@@ -528,11 +528,22 @@ echo $c
 For Loops
 
 #!/bin/bash
-for var1 in bread meat dairy vegetables fruit
+i=1
+weekdays="Mon Tue Wed Thu Fri"
+for day in $weekdays
 do
-echo one of the main food group is $var1
+ echo "Weekday $((i++)) : $day"
 done
 
-example:
+#!/bin/bash
+i=1
+cd ~
+for file in *
+do
+ echo "File $((i++)) : $file"
+done
+
+
+
 
 
