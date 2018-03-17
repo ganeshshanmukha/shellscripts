@@ -618,5 +618,104 @@ grep x$ file.txt
 
 fgrep o$ file.txt 
 
+https://www.ostechnix.com/the-grep-command-tutorial-with-examples-for-beginners/
 
+
+sort : 
+
+filename.txt
+
+abhishek
+chitransh
+satish
+rajan
+naveen
+divyam
+harsh
+
+mix.txt
+
+abc
+apple
+BALL
+Abc
+bat
+
+sort mix.txt
+
+sort file.txt > output.txt
+
+sort -o output.txt file.txt
+
+-r Option: Sorting In Reverse Order
+
+sort -r inputfile.txt
+
+-n Option 
+
+To sort a file numerically used –n option. -n option is also predefined in unix as the above options are. This option is used to sort the file with numeric data present inside.
+
+sort -n file1.txt
+
+-nr option
+
+-nr option : To sort a file with numeric data in reverse order we can use the combination of two options as stated below.
+
+
+sort 
+
+employee.txt
+
+manager  5000
+clerk    4000
+employee  6000
+peon     4500
+director 9000
+guard     3000
+
+sort -k 2n employee.txt
+
+-c option : This option is used to check if the file given is already sorted or not & checks if a file is already sorted pass the -c option to sort. This will write to standard output if there are lines that are out of order.The sort tool can be used to understand if this file is sorted and which lines are out of order
+Example :
+
+filename.txt
+
+Audi
+Cadillac
+BMW
+Dodge
+
+Command :
+$ sort -c cars.txt
+Output :
+sort: cars.txt:3: disorder: BMW
+ Note : If there is no output then the file is considered to be already sort
+
+-u option : To sort and remove duplicates pass the -u option to sort. This will write a sorted list to standard output and remove duplicates.
+This option is helpful as the duplicates being removed gives us an redundant file
+
+filename.txt
+
+Audi
+BMW
+Cadillac
+BMW
+Dodge
+
+
+sort -u filename.txt
+
+-M Option : To sort by month pass the -M option to sort. This will write a sorted list to standard output ordered by month name.
+
+months.txt
+
+February
+January
+March
+August
+September
+
+sort -M months.txt
+
+https://www.geeksforgeeks.org/sort-command-linuxunix-examples/
 
