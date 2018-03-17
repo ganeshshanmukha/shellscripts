@@ -444,6 +444,7 @@ echo " My country is $country ,I'm an indian "
 
 
 example :2
+
 #!/bin/bash
 echo -n "Please enter the name of a directory : "
 read dir
@@ -455,7 +456,49 @@ read dir
 done
 echo congratulations : $dir is a directory!
 
- 
+
+inifinite Loop 
+
+#!/bin/sh
+echo -n "Please enter the value of a :  "
+read a
+
+until [ $a -lt 10 ]
+do
+   echo $a
+   a=`expr $a + 1`
+done
+
+Break:
+
+#!/bin/sh
+echo -n " Please enter a value of a : "
+read a
+while [ $a -lt 10 ]
+do
+   echo $a
+   if [ $a -eq 5 ]
+   then
+      break
+   fi
+   a=`expr $a + 1`
+done
+
+Continue:
+
+#!/bin/sh
+echo -n " Please enter a value of a : "
+read a
+while [ $a -lt 10 ]
+do
+   echo $a
+   if [ $a -eq 5 ]
+   then
+      continue
+   fi
+   a=`expr $a + 1`
+done
+
 Break and Continue
 
  
