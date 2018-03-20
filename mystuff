@@ -736,3 +736,61 @@ stearm editor
 /ducks/!d
 
 
+
+
+
+Functions
+
+Code Structure of Shell
+
+Intrepreter
+Opening Comment
+Important Variables
+Functions
+main body of code
+
+Syntax of Functions
+
+function func_name {
+. . .
+commands
+. . .
+}
+or
+func_name ( ) {
+. . .
+commands
+. . .
+}
+Opening curly braces can also be used in the second line as well.
+func_name ( )
+{
+. . .
+commands
+. . .
+}
+Example:
+
+#!/bin/bash
+file=greptest
+
+pause()
+{
+echo -n "hit <enter> to continue : "
+read junk
+}
+
+echo Lines that are start with a T:
+grep '^T' $file
+pause
+
+echo ===========================
+echo Blank Lines :
+grep '$^' $file
+pause
+
+echo ============
+echo Lines that have two or more a\'s anywhere in them :
+grep 'aa' $file
+pause
+
