@@ -794,3 +794,44 @@ echo Lines that have two or more a\'s anywhere in them :
 grep 'aa' $file
 pause
 
+Function Parameters 
+
+[root@server shellscripts]# ps
+  PID TTY          TIME CMD
+ 1539 pts/0    00:00:00 bash
+ 1602 pts/0    00:00:00 ps
+[root@server shellscripts]# ps -f
+UID        PID  PPID  C STIME TTY          TIME CMD
+root      1539  1537  0 21:35 pts/0    00:00:00 -bash
+root      1603  1539  0 21:45 pts/0    00:00:00 ps -f
+
+Example
+
+backup_one_file()
+{
+cp $1 $backupdir
+echo $1 has been backedup
+}
+
+
+backup_one_file report.txt
+backup_one_file logo.gif
+
+
+Each parameter 
+
+$* = represents all the parameters 
+$# = represents the number of parameter
+
+
+#!/bin/bash
+backup_these_files()
+{
+for fname #short for "for fname in $*"
+do
+cp $fname /tmp
+echo $fname has been backed up
+done
+}
+backup_these_files *.txt *.doc
+
