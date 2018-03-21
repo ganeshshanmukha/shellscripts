@@ -605,6 +605,8 @@ grep .n file.txt = word contains "n"
 
 extended grep or grep -E
 
+egrep -r 'aws_access_key_id|aws_secret_access_key' > /tmp/audit1.txt
+
 egrep '^(l|o)' file.txt
 
 egrep '^[l-u]' file.txt range 
