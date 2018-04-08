@@ -726,6 +726,53 @@ stearm editor
 /ducks/!d
 
 
+AWK
+
+AWK
+
+Aho, Weinberger, and Kernighan
+
+To print 
+
+awk '{print "Welcome to awk command tutorial "}'
+
+Using Variables
+
+$0 for the whole line.
+$1 for the first field.
+$2 for the second field.
+$n for the nth field.
+
+
+Cat myfile 
+
+This is a Test
+This is a First Test
+This is a Second Test
+This is a Third Test
+
+
+awk '{print $1}' myfile
+
+Sometimes the separator in some files is not space nor tab but something else. You can specify it using –F option:
+
+awk -F: '{print $1}' /etc/passwd
+
+Using Multiple Commands
+
+echo "Hello Tom" | awk '{$2="Adam"; print $0}'
+
+Awk can take the following options:
+
+-F fs     To specify a file separator.
+
+-f file     To specify a file that contains awk script.
+
+-v var=value     To declare a variable.
+
+
+Ref : https://likegeeks.com/awk-command/
+
 
 
 
