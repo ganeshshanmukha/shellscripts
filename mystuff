@@ -499,19 +499,6 @@ do
    a=`expr $a + 1`
 done
 
-Break and Continue
-
- 
-
-
-
-
-
-
-
-
-
-
 Numerical calculations
 
 expr 1 + 2
@@ -529,11 +516,12 @@ For Loops
 
 #!/bin/bash
 i=1
-weekdays="Mon Tue Wed Thu Fri"
+weekdays="Mon Tue Wed Thu Fri Sat Sun"
 for day in $weekdays
 do
  echo "Weekday $((i++)) : $day"
 done
+
 
 #!/bin/bash
 i=1
