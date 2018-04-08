@@ -532,8 +532,7 @@ do
 done
 
 #!/bin/sh
-
-NUMS=`cat num.txt`
+read -p "Please enter the number :" NUMS
 
 for NUM in $NUMS
 do
@@ -545,6 +544,7 @@ do
    fi
    echo "Found odd number"
 done
+
 
 
 Text Processing
