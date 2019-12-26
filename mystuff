@@ -151,6 +151,8 @@ In addition to the setting environmental items the /etc/profile will execute the
 
 .bashrc file in your home directory. This file is meant for setting command aliases and functions used by bash shell users.
  The /etc/bashrc is setting command aliases  in system wide 
+ 
+ echo "export AS='name'" > /etc/profile.d/tom.sh
 
 
 conditional code
